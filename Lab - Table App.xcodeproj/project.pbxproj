@@ -15,7 +15,6 @@
 		58859E82225DFD000052AC00 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E81225DFD000052AC00 /* ServerManager.swift */; };
 		58859E87225E14F70052AC00 /* TVSeriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */; };
 		58859E89225E36F20052AC00 /* TVSeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */; };
-		58859E8B225E58A10052AC00 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E8A225E58A10052AC00 /* Utils.swift */; };
 		58859E8F225E634B0052AC00 /* TVSeriesDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		58859E81225DFD000052AC00 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesTableViewController.swift; sourceTree = "<group>"; };
 		58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesDetailViewController.swift; sourceTree = "<group>"; };
-		58859E8A225E58A10052AC00 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +94,6 @@
 				58859E6C225DECB70052AC00 /* AppDelegate.swift */,
 				58859E73225DECB90052AC00 /* Assets.xcassets */,
 				58859E75225DECB90052AC00 /* LaunchScreen.storyboard */,
-				58859E8A225E58A10052AC00 /* Utils.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -188,7 +185,6 @@
 				58859E8F225E634B0052AC00 /* TVSeriesDetailTableViewController.swift in Sources */,
 				58859E7F225DEE0D0052AC00 /* TVSeries.swift in Sources */,
 				58859E6D225DECB70052AC00 /* AppDelegate.swift in Sources */,
-				58859E8B225E58A10052AC00 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
