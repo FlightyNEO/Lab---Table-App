@@ -17,8 +17,9 @@ class TVSeriesDetailViewController: UIViewController {
     // MARK: ... Properties
     var tvSeries: TVSeries? {
         didSet {
-            guard let dataPoster = tvSeries?.poster else { return }
-            self.dataPoster = dataPoster
+            guard let tvSeries = tvSeries else { return }
+            self.dataPoster = tvSeries.poster
+            title = tvSeries.name
         }
     }
     // MARK: ... Private properties
@@ -34,7 +35,6 @@ class TVSeriesDetailViewController: UIViewController {
     }
     
     private func setupUI() {
-        
         guard let dataPoster = dataPoster else { return }
         
         posterImageView.image = UIImage(data: dataPoster)
