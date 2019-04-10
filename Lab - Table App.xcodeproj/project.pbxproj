@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		58859E6D225DECB70052AC00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E6C225DECB70052AC00 /* AppDelegate.swift */; };
-		58859E6F225DECB70052AC00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E6E225DECB70052AC00 /* ViewController.swift */; };
 		58859E72225DECB70052AC00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58859E70225DECB70052AC00 /* Main.storyboard */; };
 		58859E74225DECB90052AC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58859E73225DECB90052AC00 /* Assets.xcassets */; };
 		58859E77225DECB90052AC00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58859E75225DECB90052AC00 /* LaunchScreen.storyboard */; };
+		58859E7F225DEE0D0052AC00 /* TVSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E7E225DEE0D0052AC00 /* TVSeries.swift */; };
+		58859E82225DFD000052AC00 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E81225DFD000052AC00 /* ServerManager.swift */; };
+		58859E87225E14F70052AC00 /* TVSeriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */; };
+		58859E89225E36F20052AC00 /* TVSeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */; };
+		58859E8B225E58A10052AC00 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E8A225E58A10052AC00 /* Utils.swift */; };
+		58859E8F225E634B0052AC00 /* TVSeriesDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58859E69225DECB70052AC00 /* Lab - Table App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab - Table App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58859E6C225DECB70052AC00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58859E6E225DECB70052AC00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58859E71225DECB70052AC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58859E73225DECB90052AC00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58859E76225DECB90052AC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58859E78225DECB90052AC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58859E7E225DEE0D0052AC00 /* TVSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeries.swift; sourceTree = "<group>"; };
+		58859E81225DFD000052AC00 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesTableViewController.swift; sourceTree = "<group>"; };
+		58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesDetailViewController.swift; sourceTree = "<group>"; };
+		58859E8A225E58A10052AC00 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		58859E6B225DECB70052AC00 /* Lab - Table App */ = {
 			isa = PBXGroup;
 			children = (
-				58859E6C225DECB70052AC00 /* AppDelegate.swift */,
-				58859E6E225DECB70052AC00 /* ViewController.swift */,
-				58859E70225DECB70052AC00 /* Main.storyboard */,
-				58859E73225DECB90052AC00 /* Assets.xcassets */,
-				58859E75225DECB90052AC00 /* LaunchScreen.storyboard */,
-				58859E78225DECB90052AC00 /* Info.plist */,
+				58859E80225DEE100052AC00 /* Models */,
+				58859E83225E13B20052AC00 /* Views */,
+				58859E85225E14000052AC00 /* Controllers */,
+				58859E84225E13C70052AC00 /* Supporting files */,
 			);
 			path = "Lab - Table App";
+			sourceTree = "<group>";
+		};
+		58859E80225DEE100052AC00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58859E7E225DEE0D0052AC00 /* TVSeries.swift */,
+				58859E81225DFD000052AC00 /* ServerManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58859E83225E13B20052AC00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58859E70225DECB70052AC00 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58859E84225E13C70052AC00 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				58859E78225DECB90052AC00 /* Info.plist */,
+				58859E6C225DECB70052AC00 /* AppDelegate.swift */,
+				58859E73225DECB90052AC00 /* Assets.xcassets */,
+				58859E75225DECB90052AC00 /* LaunchScreen.storyboard */,
+				58859E8A225E58A10052AC00 /* Utils.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		58859E85225E14000052AC00 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */,
+				58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */,
+				58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58859E6F225DECB70052AC00 /* ViewController.swift in Sources */,
+				58859E82225DFD000052AC00 /* ServerManager.swift in Sources */,
+				58859E89225E36F20052AC00 /* TVSeriesDetailViewController.swift in Sources */,
+				58859E87225E14F70052AC00 /* TVSeriesTableViewController.swift in Sources */,
+				58859E8F225E634B0052AC00 /* TVSeriesDetailTableViewController.swift in Sources */,
+				58859E7F225DEE0D0052AC00 /* TVSeries.swift in Sources */,
 				58859E6D225DECB70052AC00 /* AppDelegate.swift in Sources */,
+				58859E8B225E58A10052AC00 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W5UZS2FYQ;
-				INFOPLIST_FILE = "Lab - Table App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Lab - Table App/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W5UZS2FYQ;
-				INFOPLIST_FILE = "Lab - Table App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Lab - Table App/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
