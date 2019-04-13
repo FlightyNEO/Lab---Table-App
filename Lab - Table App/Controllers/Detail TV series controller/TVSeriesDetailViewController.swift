@@ -8,6 +8,14 @@
 
 import UIKit
 
+protocol TVSeriesDetailViewControllerDataSource: class {
+    func changedTVSeries(_ series: TVSeries)
+}
+
+protocol TVSeriesDetailViewControllerDelegate: class {
+    func didChangeTVSeries(_ series: TVSeries)
+}
+
 class TVSeriesDetailViewController: UIViewController {
     
     // MARK: ... IBOutlets
@@ -15,47 +23,42 @@ class TVSeriesDetailViewController: UIViewController {
     @IBOutlet weak var posterImageView: UIImageView!
     
     // MARK: ... Properties
+    weak var dataSource: TVSeriesDetailViewControllerDataSource?
+    weak var delegate: TVSeriesDetailViewControllerDelegate?
     var tvSeries: TVSeries? {
         didSet {
             guard let tvSeries = tvSeries else { return }
-            self.dataPoster = tvSeries.poster
+            //self.dataPoster = tvSeries.poster
             title = tvSeries.name
+            updateUI()
+            dataSource?.changedTVSeries(tvSeries)
+            delegate?.didChangeTVSeries(tvSeries)
         }
     }
     // MARK: ... Private properties
-    private var dataPoster: Data?
+    private var dataPoster: Data? {
+        return tvSeries?.poster
+    }
     
+    // MARK: ... Life cicle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupUI()
-    }
-    
-    private func setupUI() {
-        guard let dataPoster = dataPoster else { return }
-        
-        posterImageView.image = UIImage(data: dataPoster)
-        
+        updateUI()
     }
 
 }
 
-// MARK: - Navigation
+// MARK: - Private metods
 extension TVSeriesDetailViewController {
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    private func updateUI() {
+        guard let dataPoster = dataPoster else { return }
         
-        guard segue.identifier == "embedTableViewController" else {
-            fatalError(#"Not found segue.identifier == "embedTableViewController""#)
-        }
-        
-        let tvSeriesDetailTableViewController = segue.destination as! TVSeriesDetailTableViewController
-        tvSeriesDetailTableViewController.tvSeries = tvSeries
-        tvSeries = nil
-        
+        posterImageView?.image = UIImage(data: dataPoster)
     }
     
 }

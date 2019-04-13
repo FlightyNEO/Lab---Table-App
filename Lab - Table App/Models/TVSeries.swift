@@ -16,10 +16,10 @@ struct TVSeries {
     var slogan: String
     var director: [String]
     var description: String
+    var rating: Float
     
-    private(set) var rating: Float
     private(set) var worldPremiere: TimeInterval
-
+    
     init(name: String, poster: Data?, year: Int, country: [String], slogan: String, director: [String], description: String, rating: Float, worldPremiere: TimeInterval) {
         
         self.name = name
@@ -47,7 +47,7 @@ extension TVSeries: Comparable {
 extension TVSeries {
     
     var ratingStars: String {
-        return Array(repeating: "⭐️", count: Int(rating)).joined()
+        return Array(repeating: symbol, count: Int(rating)).joined()
     }
     
     var worldPremiereFormatter: String {
@@ -58,5 +58,9 @@ extension TVSeries {
         //dateFormatter.dateFormat = "dd MMM, HH:mm"
         
         return dateFormatter.string(from: date)
+    }
+    
+    var symbol: String {
+        return "⭐️"
     }
 }

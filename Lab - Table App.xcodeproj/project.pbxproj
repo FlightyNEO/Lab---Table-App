@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580B8B63226108B700D3BC04 /* RatingChoosingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B62226108B700D3BC04 /* RatingChoosingViewController.swift */; };
+		580B8B6A2261464500D3BC04 /* TVSeriesTableViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B692261464500D3BC04 /* TVSeriesTableViewController+TableView.swift */; };
+		580B8B6C226146E100D3BC04 /* TVSeriesTableViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B6B226146E100D3BC04 /* TVSeriesTableViewController+Navigation.swift */; };
+		580B8B6E2261473100D3BC04 /* TVSeriesTableViewController+UISplitViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B6D2261473100D3BC04 /* TVSeriesTableViewController+UISplitViewControllerDelegate.swift */; };
+		580B8B702261484A00D3BC04 /* TVSeriesDetailViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B6F2261484A00D3BC04 /* TVSeriesDetailViewController+Navigation.swift */; };
+		580B8B722261489D00D3BC04 /* TVSeriesDetailTableViewController+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B712261489D00D3BC04 /* TVSeriesDetailTableViewController+UITextViewDelegate.swift */; };
+		580B8B74226148BF00D3BC04 /* EditTVSeriesTableViewController+UIPopoverPresentationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B73226148BF00D3BC04 /* EditTVSeriesTableViewController+UIPopoverPresentationControllerDelegate.swift */; };
+		580B8B76226148E300D3BC04 /* TVSeriesDetailTableViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B75226148E300D3BC04 /* TVSeriesDetailTableViewController+TableView.swift */; };
+		580B8B7A2261495700D3BC04 /* EditTVSeriesTableViewController+RatingChoosingViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B792261495700D3BC04 /* EditTVSeriesTableViewController+RatingChoosingViewControllerDelegate.swift */; };
+		580B8B7C226149E600D3BC04 /* RatingChoosingViewController+UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B7B226149E600D3BC04 /* RatingChoosingViewController+UIPickerView.swift */; };
+		580B8B7E22614AF100D3BC04 /* EditTVSeriesTableViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B8B7D22614AF100D3BC04 /* EditTVSeriesTableViewController+Navigation.swift */; };
+		581074012262133F0089ED0C /* EditTVSeriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581074002262133F0089ED0C /* EditTVSeriesTableViewController.swift */; };
+		58107404226213FE0089ED0C /* EditTVSeriesTableViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58107403226213FE0089ED0C /* EditTVSeriesTableViewController+TableView.swift */; };
+		58107406226214940089ED0C /* EditTVSeriesViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58107405226214940089ED0C /* EditTVSeriesViewController+Navigation.swift */; };
 		58859E6D225DECB70052AC00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E6C225DECB70052AC00 /* AppDelegate.swift */; };
 		58859E72225DECB70052AC00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58859E70225DECB70052AC00 /* Main.storyboard */; };
 		58859E74225DECB90052AC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58859E73225DECB90052AC00 /* Assets.xcassets */; };
@@ -16,9 +30,28 @@
 		58859E87225E14F70052AC00 /* TVSeriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */; };
 		58859E89225E36F20052AC00 /* TVSeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */; };
 		58859E8F225E634B0052AC00 /* TVSeriesDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */; };
+		58859E912260A0D60052AC00 /* EditTVSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859E902260A0D50052AC00 /* EditTVSeriesViewController.swift */; };
+		58B6CEF622623ED300D34B49 /* EditTVSeriesTableViewController+UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B6CEF522623ED300D34B49 /* EditTVSeriesTableViewController+UIImagePickerControllerDelegate.swift */; };
+		58B6CEF8226241E400D34B49 /* EditTVSeriesViewController+EditTVSeriesTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B6CEF7226241E400D34B49 /* EditTVSeriesViewController+EditTVSeriesTableViewControllerDelegate.swift */; };
+		58B6CEFA2262446600D34B49 /* TVSeriesDetailTableViewController+TVSeriesDetailViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B6CEF92262446600D34B49 /* TVSeriesDetailTableViewController+TVSeriesDetailViewControllerDataSource.swift */; };
+		58B6CEFC22624A1800D34B49 /* TVSeriesTableViewController+TVSeriesDetailViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B6CEFB22624A1800D34B49 /* TVSeriesTableViewController+TVSeriesDetailViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		580B8B62226108B700D3BC04 /* RatingChoosingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingChoosingViewController.swift; sourceTree = "<group>"; };
+		580B8B692261464500D3BC04 /* TVSeriesTableViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesTableViewController+TableView.swift"; sourceTree = "<group>"; };
+		580B8B6B226146E100D3BC04 /* TVSeriesTableViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesTableViewController+Navigation.swift"; sourceTree = "<group>"; };
+		580B8B6D2261473100D3BC04 /* TVSeriesTableViewController+UISplitViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesTableViewController+UISplitViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		580B8B6F2261484A00D3BC04 /* TVSeriesDetailViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesDetailViewController+Navigation.swift"; sourceTree = "<group>"; };
+		580B8B712261489D00D3BC04 /* TVSeriesDetailTableViewController+UITextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesDetailTableViewController+UITextViewDelegate.swift"; sourceTree = "<group>"; };
+		580B8B73226148BF00D3BC04 /* EditTVSeriesTableViewController+UIPopoverPresentationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTVSeriesTableViewController+UIPopoverPresentationControllerDelegate.swift"; sourceTree = "<group>"; };
+		580B8B75226148E300D3BC04 /* TVSeriesDetailTableViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesDetailTableViewController+TableView.swift"; sourceTree = "<group>"; };
+		580B8B792261495700D3BC04 /* EditTVSeriesTableViewController+RatingChoosingViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTVSeriesTableViewController+RatingChoosingViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		580B8B7B226149E600D3BC04 /* RatingChoosingViewController+UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RatingChoosingViewController+UIPickerView.swift"; sourceTree = "<group>"; };
+		580B8B7D22614AF100D3BC04 /* EditTVSeriesTableViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTVSeriesTableViewController+Navigation.swift"; sourceTree = "<group>"; };
+		581074002262133F0089ED0C /* EditTVSeriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTVSeriesTableViewController.swift; sourceTree = "<group>"; };
+		58107403226213FE0089ED0C /* EditTVSeriesTableViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTVSeriesTableViewController+TableView.swift"; sourceTree = "<group>"; };
+		58107405226214940089ED0C /* EditTVSeriesViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTVSeriesViewController+Navigation.swift"; sourceTree = "<group>"; };
 		58859E69225DECB70052AC00 /* Lab - Table App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab - Table App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58859E6C225DECB70052AC00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58859E71225DECB70052AC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +63,11 @@
 		58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesTableViewController.swift; sourceTree = "<group>"; };
 		58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesDetailViewController.swift; sourceTree = "<group>"; };
 		58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSeriesDetailTableViewController.swift; sourceTree = "<group>"; };
+		58859E902260A0D50052AC00 /* EditTVSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTVSeriesViewController.swift; sourceTree = "<group>"; };
+		58B6CEF522623ED300D34B49 /* EditTVSeriesTableViewController+UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTVSeriesTableViewController+UIImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
+		58B6CEF7226241E400D34B49 /* EditTVSeriesViewController+EditTVSeriesTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditTVSeriesViewController+EditTVSeriesTableViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		58B6CEF92262446600D34B49 /* TVSeriesDetailTableViewController+TVSeriesDetailViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesDetailTableViewController+TVSeriesDetailViewControllerDataSource.swift"; sourceTree = "<group>"; };
+		58B6CEFB22624A1800D34B49 /* TVSeriesTableViewController+TVSeriesDetailViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVSeriesTableViewController+TVSeriesDetailViewControllerDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +81,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580B8B64226144F700D3BC04 /* Master TV series controller */ = {
+			isa = PBXGroup;
+			children = (
+				58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */,
+				580B8B692261464500D3BC04 /* TVSeriesTableViewController+TableView.swift */,
+				580B8B6B226146E100D3BC04 /* TVSeriesTableViewController+Navigation.swift */,
+				580B8B6D2261473100D3BC04 /* TVSeriesTableViewController+UISplitViewControllerDelegate.swift */,
+				58B6CEFB22624A1800D34B49 /* TVSeriesTableViewController+TVSeriesDetailViewControllerDelegate.swift */,
+			);
+			path = "Master TV series controller";
+			sourceTree = "<group>";
+		};
+		580B8B652261452500D3BC04 /* Detail TV series controller */ = {
+			isa = PBXGroup;
+			children = (
+				58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */,
+				580B8B6F2261484A00D3BC04 /* TVSeriesDetailViewController+Navigation.swift */,
+				580B8B662261454E00D3BC04 /* Detail TV series table controller */,
+			);
+			path = "Detail TV series controller";
+			sourceTree = "<group>";
+		};
+		580B8B662261454E00D3BC04 /* Detail TV series table controller */ = {
+			isa = PBXGroup;
+			children = (
+				58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */,
+				580B8B712261489D00D3BC04 /* TVSeriesDetailTableViewController+UITextViewDelegate.swift */,
+				580B8B75226148E300D3BC04 /* TVSeriesDetailTableViewController+TableView.swift */,
+				58B6CEF92262446600D34B49 /* TVSeriesDetailTableViewController+TVSeriesDetailViewControllerDataSource.swift */,
+			);
+			path = "Detail TV series table controller";
+			sourceTree = "<group>";
+		};
+		580B8B672261457400D3BC04 /* Edit TV series controller */ = {
+			isa = PBXGroup;
+			children = (
+				58859E902260A0D50052AC00 /* EditTVSeriesViewController.swift */,
+				58107405226214940089ED0C /* EditTVSeriesViewController+Navigation.swift */,
+				58B6CEF7226241E400D34B49 /* EditTVSeriesViewController+EditTVSeriesTableViewControllerDelegate.swift */,
+				58107402226213680089ED0C /* Edit TV series table controller */,
+			);
+			path = "Edit TV series controller";
+			sourceTree = "<group>";
+		};
+		580B8B682261458D00D3BC04 /* Year choosing popover controller */ = {
+			isa = PBXGroup;
+			children = (
+				580B8B62226108B700D3BC04 /* RatingChoosingViewController.swift */,
+				580B8B7B226149E600D3BC04 /* RatingChoosingViewController+UIPickerView.swift */,
+			);
+			path = "Year choosing popover controller";
+			sourceTree = "<group>";
+		};
+		58107402226213680089ED0C /* Edit TV series table controller */ = {
+			isa = PBXGroup;
+			children = (
+				581074002262133F0089ED0C /* EditTVSeriesTableViewController.swift */,
+				580B8B792261495700D3BC04 /* EditTVSeriesTableViewController+RatingChoosingViewControllerDelegate.swift */,
+				580B8B7D22614AF100D3BC04 /* EditTVSeriesTableViewController+Navigation.swift */,
+				580B8B73226148BF00D3BC04 /* EditTVSeriesTableViewController+UIPopoverPresentationControllerDelegate.swift */,
+				58107403226213FE0089ED0C /* EditTVSeriesTableViewController+TableView.swift */,
+				58B6CEF522623ED300D34B49 /* EditTVSeriesTableViewController+UIImagePickerControllerDelegate.swift */,
+				580B8B682261458D00D3BC04 /* Year choosing popover controller */,
+			);
+			path = "Edit TV series table controller";
+			sourceTree = "<group>";
+		};
 		58859E60225DECB70052AC00 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +206,9 @@
 		58859E85225E14000052AC00 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				58859E86225E14F70052AC00 /* TVSeriesTableViewController.swift */,
-				58859E88225E36F20052AC00 /* TVSeriesDetailViewController.swift */,
-				58859E8E225E634B0052AC00 /* TVSeriesDetailTableViewController.swift */,
+				580B8B64226144F700D3BC04 /* Master TV series controller */,
+				580B8B652261452500D3BC04 /* Detail TV series controller */,
+				580B8B672261457400D3BC04 /* Edit TV series controller */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,12 +284,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580B8B6C226146E100D3BC04 /* TVSeriesTableViewController+Navigation.swift in Sources */,
 				58859E82225DFD000052AC00 /* ServerManager.swift in Sources */,
+				580B8B7E22614AF100D3BC04 /* EditTVSeriesTableViewController+Navigation.swift in Sources */,
+				580B8B6E2261473100D3BC04 /* TVSeriesTableViewController+UISplitViewControllerDelegate.swift in Sources */,
+				580B8B722261489D00D3BC04 /* TVSeriesDetailTableViewController+UITextViewDelegate.swift in Sources */,
+				58B6CEFA2262446600D34B49 /* TVSeriesDetailTableViewController+TVSeriesDetailViewControllerDataSource.swift in Sources */,
+				580B8B7A2261495700D3BC04 /* EditTVSeriesTableViewController+RatingChoosingViewControllerDelegate.swift in Sources */,
+				58107404226213FE0089ED0C /* EditTVSeriesTableViewController+TableView.swift in Sources */,
+				58107406226214940089ED0C /* EditTVSeriesViewController+Navigation.swift in Sources */,
+				580B8B74226148BF00D3BC04 /* EditTVSeriesTableViewController+UIPopoverPresentationControllerDelegate.swift in Sources */,
+				580B8B6A2261464500D3BC04 /* TVSeriesTableViewController+TableView.swift in Sources */,
 				58859E89225E36F20052AC00 /* TVSeriesDetailViewController.swift in Sources */,
+				580B8B63226108B700D3BC04 /* RatingChoosingViewController.swift in Sources */,
+				58859E912260A0D60052AC00 /* EditTVSeriesViewController.swift in Sources */,
 				58859E87225E14F70052AC00 /* TVSeriesTableViewController.swift in Sources */,
+				58B6CEFC22624A1800D34B49 /* TVSeriesTableViewController+TVSeriesDetailViewControllerDelegate.swift in Sources */,
+				580B8B7C226149E600D3BC04 /* RatingChoosingViewController+UIPickerView.swift in Sources */,
+				581074012262133F0089ED0C /* EditTVSeriesTableViewController.swift in Sources */,
 				58859E8F225E634B0052AC00 /* TVSeriesDetailTableViewController.swift in Sources */,
 				58859E7F225DEE0D0052AC00 /* TVSeries.swift in Sources */,
+				58B6CEF8226241E400D34B49 /* EditTVSeriesViewController+EditTVSeriesTableViewControllerDelegate.swift in Sources */,
+				580B8B702261484A00D3BC04 /* TVSeriesDetailViewController+Navigation.swift in Sources */,
+				58B6CEF622623ED300D34B49 /* EditTVSeriesTableViewController+UIImagePickerControllerDelegate.swift in Sources */,
 				58859E6D225DECB70052AC00 /* AppDelegate.swift in Sources */,
+				580B8B76226148E300D3BC04 /* TVSeriesDetailTableViewController+TableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
